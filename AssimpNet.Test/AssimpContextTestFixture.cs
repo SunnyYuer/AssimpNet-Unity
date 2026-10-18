@@ -180,7 +180,7 @@ namespace Assimp.Test
             console2.Attach();
             console3.Attach();
 
-            AssimpLibrary.Instance.FreeLibrary();
+            LogStream.DetachAllLogstreams();
 
             IEnumerable<LogStream> logs = LogStream.GetAttachedLogStreams();
 

@@ -84,10 +84,7 @@ namespace Assimp
     /// <summary>
     /// Static constructor.
     /// </summary>
-    static LogStream()
-    {
-      AssimpLibrary.Instance.LibraryFreed += AssimpLibraryFreed;
-    }
+    static LogStream() { }
 
     /// <summary>
     /// Constructs a new LogStream.
@@ -166,12 +163,6 @@ namespace Assimp
         //Return a copy to prevent concurrent modification exceptions.
         return s_activeLogstreams.ToArray();
       }
-    }
-
-    //Ensure we cleanup our logstreams if any are around when the unmanaged library is freed.
-    private static void AssimpLibraryFreed(object sender, EventArgs e)
-    {
-      DetachAllLogstreams();
     }
 
     /// <summary>
