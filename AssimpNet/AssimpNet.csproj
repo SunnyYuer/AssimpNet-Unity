@@ -8,14 +8,14 @@
     <SignAssembly Condition=" '$(MSBuildRuntimeType)' != 'Core'">true</SignAssembly>
     <AssemblyOriginatorKeyFile Condition=" '$(MSBuildRuntimeType)' != 'Core'">AssimpKey.snk</AssemblyOriginatorKeyFile>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
-    <Authors>Nicholas Woodfield, Salvage</Authors>
+    <Authors>Yuer, Nicholas Woodfield, Salvage</Authors>
     <Company />
     <Version>5.4.3.4</Version>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
-    <Copyright>Copyright © 2012-2020 Nicholas Woodfield, © 2024-2025 Salvage</Copyright>
+    <Copyright>© 2026 Yuer, © 2012-2020 Nicholas Woodfield, © 2024-2025 Salvage</Copyright>
     <PackageIcon>logo.png</PackageIcon>
-    <PackageProjectUrl>https://github.com/Saalvage/AssimpNetter</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/Saalvage/AssimpNetter</RepositoryUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
     <RepositoryType>Git</RepositoryType>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
@@ -23,7 +23,7 @@
     <Description>A .NET Wrapper for the Open Asset Import (Assimp) library. The library is able to import dozens of different 3D model formats (e.g. OBJ, FBX, GLTF, Collada) and export to several formats (e.g. OBJ, GLTF, Collada). Releases target the corresponding version of the native library.</Description>
     <PackageTags>Model 3D Graphics Assimp Mesh Importers Content Assets FBX Collada GLTF OBJ 3DS DXF</PackageTags>
     <RootNamespace>Assimp</RootNamespace>
-    <AssemblyName>AssimpNetter</AssemblyName>
+    <AssemblyName>AssimpNet</AssemblyName>
     <Title>AssimpNet</Title>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
