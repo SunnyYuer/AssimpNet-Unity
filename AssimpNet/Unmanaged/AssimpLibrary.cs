@@ -37,11 +37,7 @@ namespace Assimp.Unmanaged
         /// <summary>
         /// Default name of the unmanaged library. Based on runtime implementation the prefix ("lib" on non-windows) and extension (.dll, .so, .dylib) will be appended automatically.
         /// </summary>
-#if !UNITY_IOS
         private const string DefaultLibName = "assimp";
-#else
-        private const string DefaultLibName = "__Internal";
-#endif
 
         private static AssimpLibrary s_instance;
 
