@@ -36,13 +36,6 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\libs\Assimp\**">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <Link>runtimes\%(RecursiveDir)\native\%(Filename)%(Extension)</Link>
-    </None>
-  </ItemGroup>
-
   <!-- Packages required for legacy versions -->
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
     <PackageReference Include="Polyfill" Version="8.9.0">
