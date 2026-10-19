@@ -87,7 +87,7 @@ public class SimpleAssimpLoader : MonoBehaviour
             for (int i = 0; i < assimpMesh.FaceCount; i++)
             {
                 var face = assimpMesh.Faces[i];
-                // AssimpNetter 确保三角化后每个面有3个索引
+                // AssimpNet 确保三角化后每个面有3个索引
                 triangles[i * 3] = face.Indices[0];
                 triangles[i * 3 + 1] = face.Indices[1];
                 triangles[i * 3 + 2] = face.Indices[2];
