@@ -13,6 +13,9 @@ namespace Assimp.Unmanaged
         // 单例模式，CLR 会通过 GetInstance 获取实例
         private static readonly Utf8StringMarshaler Instance = new Utf8StringMarshaler();
 
+        /// <summary>
+        /// 获取实例
+        /// </summary>
         public static ICustomMarshaler GetInstance(string cookie)
         {
             return Instance;
@@ -88,11 +91,17 @@ namespace Assimp.Unmanaged
             }
         }
 
+        /// <summary>
+        /// CLR（公共语言运行时）会在封送处理结束且托管数据不再被引用时自动调用此方法
+        /// </summary>
         public void CleanUpManagedData(object managedObj)
         {
             // 托管对象由 GC 管理，无需操作
         }
 
+        /// <summary>
+        /// 要封送的非托管数据的大小
+        /// </summary>
         public int GetNativeDataSize()
         {
             return -1; // 表示大小不固定
